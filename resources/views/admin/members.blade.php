@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'Yalla') }}</title>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/screen.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="content">
+    <div class="logoadmin"><img src="{{ asset('img-layout/logo.png') }}" alt="logoa"> </div>
+    <div id="app">
+        <h1 class="title-admin">Voici les membres de l'association</h1>
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <td>N° membre</td>
+                <td>Nom</td>
+                <td>Prenom</td>
+                <td>Email</td>
+                <td>Adresse</td>
+                <td>Code Postale</td>
+                <td>Region</td>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach($datas as $key => $value)
+                <tr>
+                    <td>{{ $value->id }}</td>
+                    <td>{{ $value->nom }}</td>
+                    <td>{{ $value->prenom }}</td>
+                    <td>{{ $value->email }}</td>
+                    <td>{{ $value->adresse }}</td>
+                    <td>{{ $value->code_postale }}</td>
+                    <td>{{ $value->region }}</td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+        <a class="btn btn-default" href="/admin">retour vers l'admin</a>
+    </div>
+<div
+    <script src="{{ asset('js/app.js') }}"></script>
+</body>
+</html>
