@@ -1073,12 +1073,12 @@ textarea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: #f57945 solid 1px;
-	color: #f57945;
+	border: #7dc95e solid 1px;
+	color: #7dc95e;
 }
 
 .sign_log-two{
-	background-color: #f57945;
+	background-color: #7dc95e;
 	margin: 0 25px;
 	border-radius: 15px;
 	height: 5vh;
@@ -1101,13 +1101,13 @@ textarea {
 	height: 80%;
 	display: flex;
 	align-items: center;
-	background-color: #f57945;
+	background-color: #7dc95e;
 	border-radius: 10px;
 }
 
 .block-containers_two{
 	background-color: none;
-	background-color: #f57945;
+	background-color: #7dc95e;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -1166,7 +1166,7 @@ hr{
 	margin-top: 45px;
 	background-color: white;
 	padding: 10px;
-	color: #f57945;
+	color: #7dc95e;
 	border: none;
 }
 
